@@ -1,0 +1,366 @@
+
+  body{
+    margin: 0 ;
+    background-color: #D9D2E0;
+    line-height: normal;
+  }
+
+ 
+  @media (max-width: 500px) {
+    body {
+      font-size: 14px;
+      margin: 0;
+    }
+}
+
+
+/*---------------------- Header ---------------------- */
+
+/*Logo*/
+  #nome{
+    font-family: "hugh is life personal use", Arial ;
+    font-size: 5em;
+  }
+
+  @media (max-width: 500px) {
+    #nome {
+      font-size: 3em;
+    }
+  }
+
+/*Menu di navigazione*/
+  #pagine a{
+    font-size: 1em;
+    margin: 15px;
+    font-family: 'Roboto',  Arial, sans-serif ;
+    font-weight: 900;
+  }
+
+/*Bottone Cerca*/
+  a.bottone {
+    border: 3px solid ;
+    border-radius: 30px;
+    padding: 6px 12px;    
+  }
+
+  /*Scritta*/
+  h1{
+    font-size: 2em;       
+  }
+
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+    
+/*Menu a tendina che compare con schermo < 500px */
+  #menu {
+    display: none;
+    }
+    
+  #menu div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
+
+  @media (max-width: 500px) {
+    #pagine {
+      display: none;
+    }
+
+    #menu{
+      display: block;
+    }
+  }
+
+  
+  header nav {
+    position: absolute;  /*Oggetto Assoluto Relativo*/
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header{
+    background: url(https://i.pinimg.com/originals/50/7f/c9/507fc9a6e8b8b7745f64029bd391b97c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  @media (max-width: 500px) {
+    header{
+      height: 400px;
+    }
+  }
+
+/*Overlay*/
+  header::before {
+    content: '';        
+    position: absolute;  
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+/* Header - Generale*/
+header{
+  font-size: 20px;
+  color:black;
+  font-style: normal;
+  font-weight: 400; 
+}
+
+
+
+
+
+
+ /*---------------------- Section ----------------------*/
+
+
+/*Contiene gli articoli per una determinata categoria*/ 
+  .contenitore{
+    display:flex;
+    justify-content: center;
+  }
+
+
+/*Categorie degli oggetti*/
+  .paragrafi{
+    text-align: center;
+    font-size: 6em;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: "Comic Neue",Arial;
+  }
+
+
+/*Dove si collocheranno gli oggetti con nome e prezzo*/
+  .card{
+    width: 350px;
+    margin: 40px;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 500px) {
+    .card {
+      margin: 5px;  
+   }
+  }
+
+/*Immagini degli oggetti*/
+  #image1{
+    background-image: url("Foto1.jpg");
+  }
+
+  #image2{
+    background-image: url("Foto2.jpg");
+  }
+
+  #image3{
+    background-image: url("Foto3.jpg");
+  }
+
+  #image4{
+    background-image: url("Foto4.jpg");
+  }
+
+
+/*Caratteristiche Immagini*/
+  #image1, #image2, #image3, #image4{
+    height: 350px;
+    background-size: cover;
+    border-radius: 15px;
+  }
+
+  @media (max-width: 500px) {
+    #image1, #image2, #image3, #image4{
+     height: 180px;
+     width: 180px;
+    }
+  }
+
+/*Nome Prodotto*/
+  .card h2{
+    margin: 5px;
+    text-align: center;
+    font-family: 'Roboto',  Arial, sans-serif ;
+  }
+
+/*Prezzo Oggetto*/
+  .card p{
+    text-align: center;
+    margin: 7px;
+    font-family: 'Anybody',  Arial, sans-serif ;
+    font-size: 15px;
+    font-weight: bold;
+  } 
+
+/*Tasto "Aggiungi aal carrello"*/
+  a.bottone2{
+    font-size: small;
+    background-color: #ff1552;
+    color: #fff;
+    border-radius: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: block;
+    text-align: center;
+    font-family: "Comic Neue",Arial;
+  }
+
+
+  a.bottone2:hover{
+    background-color: #fff;
+    color: #ff1552;
+  }
+
+
+
+/*Scritta 'Coming Soon...' */
+  .comingSoon{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 70px;
+    margin-bottom: 30;
+    font-family: "Comic Neue",Arial;
+  }
+
+
+/*Section Generale*/
+section{
+  font-size: 10px;
+  color:black;
+  font-style: normal;
+  font-weight: 400; 
+  margin-top: 110px;
+  
+}
+  
+
+
+
+/*----------------------Footer----------------------*/
+
+/*Contenitore Footer*/
+  #fot{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items:flex-start;
+  }
+
+/*Logo*/
+  #fot #nome {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    }
+  
+  @media (max-width: 500px) {
+    #fot #nome{
+      font-size: 25px;
+      padding-bottom: 40px;
+    }
+  }
+
+/*Social*/
+  .social{
+    margin-top: 30px;
+  }
+
+
+  @media (max-width: 500px) {
+    .social{
+      font-size: 9px;
+      padding-top: 5px;
+      margin-bottom: 5px;
+   }
+ }
+ 
+/*Contenitori Categorie*/
+  #prodotti, #informazioni, #account  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+  }
+
+/*Titoli Categorie*/
+  #informazioni h1, #account h1, #prodotti h1{
+    color: rgba(255, 255, 255, .5);
+    font-family: Ubuntu;
+  }
+
+  @media (max-width: 500px) {
+    #informazioni h1, #account h1, #prodotti h1{
+      font-size: 12px;
+   }
+ }
+
+/*Elementi Delle Categorie*/
+  #prodotti a, #informazioni a, #account a{
+   margin: 10px;
+  }
+
+  @media (max-width: 500px) {
+    #prodotti a, #informazioni a, #account a{
+      font-size: 8px;
+      margin: 3px;
+   }
+ }
+
+  #informazioni a:hover, #prodotti a:hover, #account a:hover{
+    color: #ff1552;
+  }
+
+/*Powered By...*/
+  footer p {
+    color: rgba(255, 255, 255, .4);
+    border-top: 1px solid;
+    padding: 5px;
+    margin: 0;
+  }
+
+/*Footer - Generale*/
+  footer {
+    background-color: rgb(27, 27, 27);
+    color: rgba(255, 255, 255, .8);
+    text-align: center;
+    font-style: normal;
+    font-weight: 400; 
+  }
+
+
+
+
+
+/*Body - Generale*/
+  a{
+    cursor: pointer;
+  }
+
+  a:hover{
+    color: #ff1552;
+  }
+
